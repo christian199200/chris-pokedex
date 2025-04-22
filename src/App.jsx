@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom'
+
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -53,6 +55,12 @@ function App() {
   return (
     <div className='container'>
       <h1>Chris Pokédex App</h1>
+      import { Link } from 'react-router-dom';
+...
+<h1>Chris Pokédex App</h1>
+<Link to="/about" style={{ marginBottom: '20px', display: 'inline-block' }}>About</Link>
+
+
 
       <div style={{ marginBottom: '20px' }}>
         <button
